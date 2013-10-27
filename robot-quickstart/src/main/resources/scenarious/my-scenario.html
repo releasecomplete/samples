@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Simple scenario</title>
+</head>
+<body>
+
+Import our keyword library
+
+<table>
+	<tr>
+		<td>Setting</td>
+		<td>Value</td>
+	</tr>
+	<tr>
+		<td>Library</td>
+		<td>com.releasecomplete.robot.MyKeywordLibrary</td>
+	</tr>
+</table>
+<br>
+
+This is a trivial scenario that calls hello(String name) method from MyKeywordLibrary.
+As a result the method returns another string that is "Hi " + name.
+<br>
+
+<table>
+	<tr>
+		<td>Test Case</td>
+		<td>Action</td>
+		<td>Arg</td>
+		<td>Arg</td>
+	</tr>
+	<tr>
+		<td>Simply call Java</td>
+		<td>${value}=</td>
+		<td>Hello</td>
+		<td>Robot</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>Should Be Equal</td>
+		<td>${value}</td>
+		<td>Hi Robot</td>
+	</tr>
+</table>
+
+</body>
+</html>
